@@ -21,7 +21,7 @@
   display: flex;
   float: right;
   width: 50%;
-  background-image: url('../public/dog1.png');
+  /* background-image: url('../public/dog1.png'); */
   height: 100vh;
   background-size: cover;
 }
@@ -46,7 +46,6 @@
   margin-left: 100px;
   display: flex;
   align-items: center;
-  /* flex-direction: column; */
 
 }
 
@@ -80,7 +79,7 @@
 }
 .photoContainer{
   position: relative;
-  bottom: 130px;
+  bottom: 20%;
   margin-top: 70%;
   color: white;
   padding: 40px;
@@ -91,8 +90,20 @@
 }
 .photoContainer p{
   width: 30%;
-}
 
+}
+.photoContainer button{
+  border: none;
+  background-color: rgba(255, 255, 255, 0.685);
+  padding: 5px;
+  
+  font-weight: 400;
+  border-radius: 50%;
+  margin : 10px 5px;
+  height: 4px;
+  width: 4px;
+  /* color: rgba(255, 255, 255, 0.199); */
+}
 @media (max-width: 900px) {
   .leftFloat{
     width: 100%;
@@ -100,6 +111,7 @@
   .rightFloat{
     width: 100%;
   }
+  .BodyPart{
+    margin-top: 5%;
+  }
 }
-
-
