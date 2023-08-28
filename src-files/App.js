@@ -15,6 +15,13 @@ function App() {
     setPopup(false);
   };
 
+  const [url,seturl] = useState("/dog1.png");
+  const handleClick1 = () => {
+    seturl(() => "/dog1.png")
+  }
+  const handleClick2 = () => {
+    seturl(() => "/dog3.png")
+  }
   return (
     <div className="App">
       <div className="leftFloat">
@@ -22,7 +29,7 @@ function App() {
         <BodyPart />
         <Footer />
       </div>
-      <div className="rightFloat" id="Right">
+      <div className="rightFloat" id="Right" style={ {backgroundImage : "url(" + url+ ")"}}>
         <nav className="navbar">
           <ul>
             <li>
@@ -45,7 +52,8 @@ function App() {
         <div className="photoContainer">
           <h3>Type here</h3>
           <p>lorem ipsum is simply a dummy text firld to fill content of the websites.</p>
-          <button>change</button>
+          <button onClick={handleClick1}>&nbsp;</button>
+          <button onClick={handleClick2}>&nbsp;</button>
         </div>
       </div>
       {Popup && <PopupPage onClose={closePopup} />}
