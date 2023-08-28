@@ -1,0 +1,80 @@
+.popup-overlay {
+    position: fixed;
+    /* top: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .popup {
+    background-color: #fde3d9;
+    padding: 40px;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.5);
+    width: 60%;
+    max-width: 500px; /* Limiting the maximum width of the popup */
+    text-align: center;
+    border-radius: 20px;
+  }
+  
+  .popup h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .popup form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .popup input,
+  .popup button {
+    margin: 10px 0;
+    padding: 12px;
+    width: 95%;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 50px;
+  }
+  .help-text{
+   
+    text-align: left; 
+  }
+  .help-text a{
+    text-decoration: none;
+  }
+  .help-text i{
+    margin-left: 3%;
+    color: black;
+  }
+  .popup button {
+    width: 40%;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .popup button:hover {
+    color: black;
+    background-color: white;
+
+  }
+  
+  .popup input:focus,
+  .popup button:focus {
+    outline: none;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+  }
+  
+  /* Media Query for Small Screens */
+  @media (max-width: 500px) {
+    .popup {
+      width: 90%;
+    }
+  }
+  

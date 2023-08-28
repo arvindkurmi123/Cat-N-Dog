@@ -1,0 +1,105 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.App{
+  background-color: #fde3d9; /* Set background color */
+  height: 100vh;
+}
+.App::after {
+  display: table;
+  flex-direction: column;
+  height: 100vh;
+  clear: both;
+}
+
+.leftFloat{
+  float: left;
+  width: 50%;
+}
+.rightFloat{
+  display: flex;
+  float: right;
+  width: 50%;
+  background-image: url('../public/dog1.png');
+  height: 100vh;
+  background-size: cover;
+}
+.logo{
+  margin: 20px;
+  padding: 40px;
+}
+
+.BodyPart{
+  margin-top: 17%;
+  padding: 20px 120px;
+}
+.BodyPart h1{
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.BodyPart p{
+  overflow: hidden;
+}
+.footer-container{
+  /* margin: 100px 100px; */
+  margin-left: 100px;
+  display: flex;
+  align-items: center;
+  /* flex-direction: column; */
+
+}
+
+.navbar {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end; /* Align items to the right */
+  position: absolute;
+  flex-direction: row;
+  top: 0;
+  right: 0; /* Stick to the right edge */
+  width: 50%; /* Set the width of the navbar */
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  display: flex; /* Display list items in a row */
+}
+
+.navbar li {
+  margin-left: 50px;
+  font-size: 15px;
+  font-weight:500;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+.photoContainer{
+  position: relative;
+  bottom: 130px;
+  margin-top: 70%;
+  color: white;
+  padding: 40px;
+  margin-left: 40px;
+}
+.photoContainer h3{
+  margin: 20px 0;
+}
+.photoContainer p{
+  width: 30%;
+}
+
+@media (max-width: 900px) {
+  .leftFloat{
+    width: 100%;
+  }
+  .rightFloat{
+    width: 100%;
+  }
+}
+
+
